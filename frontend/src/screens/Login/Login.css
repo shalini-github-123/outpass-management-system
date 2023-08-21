@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Jura:400');
+
+.entry-page * {
+  font-family: Jura, Arial;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url("ssn.jpg") no-repeat fixed;
+  background-size: 100% 100%;
+}
+
+.loading-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+}
+
+.entry-page h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.entry-page {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.entry-page form {
+  display: grid;
+  grid-gap: 10px;
+  padding: 20px;
+  width: 400px; 
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 32px 64px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.entry-page form h2 {
+  margin-bottom: 10px;
+  text-align: center;
+  text-shadow: 0 4px 16px #fff;
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.entry-page form fieldset {
+  margin: 0;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.entry-page form fieldset ul {
+  margin: 0;
+  padding: 0;
+}
+
+.entry-page form fieldset ul li {
+  display: grid;
+  align-items: center;
+  margin: 10px;
+}
+
+.entry-page form fieldset ul li a {
+  color: #02c;
+}
+
+.entry-page form fieldset ul li em {
+  grid-column: span 2;
+  text-align: center;
+  padding: 5px;
+}
+
+.entry-page form fieldset ul li label {
+  text-align: left;
+  padding-bottom: 2px;
+}
+
+.entry-page form fieldset ul li input {
+  padding: 8px; 
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.entry-page form fieldset ul li input:hover {
+  border: 1px solid #aaf;
+}
+
+.entry-page form button {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.entry-page form button:hover {
+  background-color: #eef;
+  border: 1px solid #aaf;
+}
+
+@media only screen and (min-width: 420px) {
+  .entry-page form h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+  .entry-page form fieldset ul li {
+    grid-template-columns: 100px 1fr;
+  }
+  .entry-page form fieldset ul li label {
+    padding-right: 10px;
+    padding-bottom: 0;
+    text-align: right !important;
+  }
+}
+
